@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
     const welcome = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        'Bem vindo Leon S. Kennedy',
+        'Bem vindo Leon S. Kennedy, o maior.',
         style: TextStyle(fontSize: 28.0, color: Colors.white),
       ),
     );
@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
     const lorem = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        'Leon S. Kennedy. Informações Classificadas.',
+        'Informações Classificadas.',
         style: TextStyle(fontSize: 16.0, color: Colors.white),
       ),
     );
@@ -40,8 +40,9 @@ class HomePage extends StatelessWidget {
       padding: const EdgeInsets.all(28.0),
       decoration: const BoxDecoration(
         gradient: LinearGradient(colors: [
-          Colors.blue,
-          Colors.lightBlueAccent,
+          Color.fromARGB(255, 255, 255, 255),
+          Color.fromARGB(255, 201, 31, 31),
+          Color.fromARGB(255, 252, 252, 252),
         ]),
       ),
       child: const Column(
@@ -50,7 +51,7 @@ class HomePage extends StatelessWidget {
     );
 
     return Scaffold(
-      appBar: new AppBar(
+      appBar: AppBar(
         title: const Text('Banco de Dados RE'),
       ),
       body: body,
